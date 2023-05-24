@@ -22,4 +22,5 @@ RUN set -ex \
  && rm /tmp/vegeta.tar.gz \
  && apk del .build-deps
 
-CMD [ "/bin/vegeta", "-help" ]
+# CMD [ "/bin/vegeta", "-help" ]
+CMD ["sh", "-c", "tail -f /dev/null"]
